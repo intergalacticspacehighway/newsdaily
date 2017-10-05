@@ -1,0 +1,19 @@
+
+<nav-component change-category="$ctrl.changeCategory(category)"></nav-component>
+<div ng-if="!$ctrl.showLoader">
+    <div class="section no-pad-bot" style="background-color: #fafafa" id="index-banner">
+        <div class="container">
+            <article-component content = "article" ng-repeat="article in $ctrl.articles"></article-component>
+        </div>
+    </div>
+
+</div>
+
+<img  ng-show="$ctrl.showLoader" class="spinner" src="../gifs/Spin.gif">
+
+<!--<footer class="page-footer orange">
+<div class="container">
+
+</div>
+
+</footer>-->
